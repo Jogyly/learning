@@ -1,7 +1,19 @@
-document.write ('<table width="100%" border="1">');
-for (i=1; i<6; i++) {
-    document.writeln("<tr>");
-    for (j=1; j<6; j++) document.write("<td>" + i + j + "<\/td>");
-    document.writeln("<\/tr>");
+
+function min(){
+    var x = arguments[0];
+    for (var i = 1; i < arguments.length; i++)
+    {
+        //x = x + arguments[i];
+        //document.writeln(arguments[i]);
+        if (arguments[i] < x)
+        {
+            x = arguments[i];
+        }
+
+    }
+    document.writeln("result: " + x);
 }
-document.write ("<\/table> ");
+
+min(3, 2, 34, 23, -5, 1);
+
+//document.write(x);
